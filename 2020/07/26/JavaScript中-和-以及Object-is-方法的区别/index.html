@@ -131,7 +131,7 @@
 <meta property="og:site_name" content="Br3ad">
 <meta property="og:description" content="==相等运算符 ==相等运算符比较两个值是否相等，在比较前将两个被比较的值转换为相同类型。在转换后（等式的一边或两边都可能被转换），然后再做比较 ——（来自MDN）  1234567891011121314console.log(1 == true); &#x2F;&#x2F; trueconsole.log(&amp;apos;1&amp;apos; == true); &#x2F;&#x2F; trueconsole.log(1 == &amp;apos;1&amp;apos;); &#x2F;&#x2F; truecon">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-07-26T08:46:20.590Z">
+<meta property="og:updated_time" content="2020-07-26T08:49:53.435Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -456,8 +456,7 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(+<span class="number">0</span> === <span class="number">-0</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log([] === []); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(&#123;&#125; === &#123;&#125;); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">NaN</span> === <span class="literal">NaN</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'11'</span> === <span class="string">'11'</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> === <span class="literal">null</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="literal">null</span>); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span> === <span class="string">'1'</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span> === <span class="number">1</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span> === <span class="literal">true</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>缺点：</strong></p>
-<p>使用<code>===</code>全等（严格比较）运算符来比较两个值不能有效地处理<code>NaN</code>(非数字的<code>number</code>类型)和<code>NaN</code>(非数字的<code>number</code>类型)以及处理负零<code>-0</code>，这个时候就需要用到<code>Object.is()</code>方法来进行比较</p>
+<p><strong>缺点：</strong><br>使用<code>===</code>全等（严格比较）运算符来比较两个值不能有效地处理<code>NaN</code>(非数字的<code>number</code>类型)和<code>NaN</code>(非数字的<code>number</code>类型)以及处理负零<code>-0</code>，这个时候就需要用到<code>Object.is()</code>方法来进行比较</p>
 <h2 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is" target="_blank" rel="noopener"><code>Object.is()</code></a></h2><blockquote>
 <p><code>Object.is()</code>方法判断两个值是否为同一个值 ——（来自<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is" target="_blank" rel="noopener">MDN</a>）</p>
 </blockquote>
